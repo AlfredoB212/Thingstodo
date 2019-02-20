@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIScrollViewImageZooming" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQz-rk-nBf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mta-map" translatesAutoresizingMaskIntoConstraints="NO" id="8C9-7n-HrA">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8C9-7n-HrA" secondAttribute="trailing" id="LAM-Sa-hyq"/>
+                                    <constraint firstItem="8C9-7n-HrA" firstAttribute="centerY" secondItem="OQz-rk-nBf" secondAttribute="centerY" id="Lql-PI-0nm"/>
+                                    <constraint firstItem="8C9-7n-HrA" firstAttribute="leading" secondItem="OQz-rk-nBf" secondAttribute="leading" id="Nh7-S9-aEK"/>
+                                    <constraint firstItem="8C9-7n-HrA" firstAttribute="centerX" secondItem="OQz-rk-nBf" secondAttribute="centerX" id="XGw-an-JxZ"/>
+                                    <constraint firstItem="8C9-7n-HrA" firstAttribute="top" secondItem="OQz-rk-nBf" secondAttribute="top" id="b58-G0-C0u"/>
+                                    <constraint firstAttribute="bottom" secondItem="8C9-7n-HrA" secondAttribute="bottom" id="rVa-hI-tCE"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OQz-rk-nBf" secondAttribute="bottom" id="0gM-h1-tUz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OQz-rk-nBf" secondAttribute="trailing" id="VwA-pj-ond"/>
+                            <constraint firstItem="OQz-rk-nBf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pGr-EG-UOD"/>
+                            <constraint firstItem="OQz-rk-nBf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wn6-cF-2Ns"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="8C9-7n-HrA" id="jYp-Iu-9SJ"/>
+                        <outlet property="scrollView" destination="OQz-rk-nBf" id="GPW-XL-XXq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mta-map" width="2700" height="3314"/>
+    </resources>
+</document>

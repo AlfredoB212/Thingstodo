@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="onF-a3-gzg">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meow-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Singleton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gZ4-4a-oPR">
+                                <rect key="frame" x="0.0" y="204.5" width="414" height="448"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="e1U-Of-WYr">
+                                <rect key="frame" x="188.5" y="410" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e1U-Of-WYr" firstAttribute="centerX" secondItem="gZ4-4a-oPR" secondAttribute="centerX" id="4xf-mB-Sn3"/>
+                            <constraint firstItem="gZ4-4a-oPR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="FhI-8O-2kB"/>
+                            <constraint firstItem="gZ4-4a-oPR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bHU-hS-eR5"/>
+                            <constraint firstItem="gZ4-4a-oPR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="lhI-cq-xVe"/>
+                            <constraint firstItem="gZ4-4a-oPR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qnP-kg-G3s"/>
+                            <constraint firstItem="e1U-Of-WYr" firstAttribute="centerY" secondItem="gZ4-4a-oPR" secondAttribute="centerY" id="urU-2L-4hn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Meow" image="cat" selectedImage="cat" id="Niq-0F-eMB"/>
+                    <connections>
+                        <outlet property="catActivityIndicator" destination="e1U-Of-WYr" id="JzW-xS-sK9"/>
+                        <outlet property="catImageView" destination="gZ4-4a-oPR" id="W5d-xX-40V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Ship-->
+        <scene sceneID="59h-UD-b6F">
+            <objects>
+                <viewController id="jiK-w8-msT" customClass="SpaceViewController" customModule="Singleton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yP1-dS-A9b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dtY-Tv-cU6">
+                                <rect key="frame" x="0.0" y="204.5" width="414" height="448"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="b4q-ll-gDB">
+                                <rect key="frame" x="188.5" y="410" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b4q-ll-gDB" firstAttribute="centerX" secondItem="dtY-Tv-cU6" secondAttribute="centerX" id="OzV-cN-Gpl"/>
+                            <constraint firstItem="b4q-ll-gDB" firstAttribute="centerY" secondItem="dtY-Tv-cU6" secondAttribute="centerY" id="P1l-ZE-O6u"/>
+                            <constraint firstItem="dtY-Tv-cU6" firstAttribute="centerX" secondItem="Rha-9X-hrN" secondAttribute="centerX" id="bca-tT-Gyx"/>
+                            <constraint firstItem="dtY-Tv-cU6" firstAttribute="centerX" secondItem="Rha-9X-hrN" secondAttribute="centerX" id="i62-4a-3Lo"/>
+                            <constraint firstItem="dtY-Tv-cU6" firstAttribute="height" secondItem="yP1-dS-A9b" secondAttribute="height" multiplier="0.5" id="jtW-WX-MzI"/>
+                            <constraint firstItem="dtY-Tv-cU6" firstAttribute="width" secondItem="yP1-dS-A9b" secondAttribute="width" id="oEe-lP-Liv"/>
+                            <constraint firstItem="dtY-Tv-cU6" firstAttribute="centerY" secondItem="Rha-9X-hrN" secondAttribute="centerY" id="oJn-nX-zan"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rha-9X-hrN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ship" image="spaceship" selectedImage="spaceship" id="LxH-my-Waj"/>
+                    <connections>
+                        <outlet property="shipActivityIndicator" destination="b4q-ll-gDB" id="cT8-pp-cJD"/>
+                        <outlet property="shipViewController" destination="dtY-Tv-cU6" id="QgV-Mw-5Ub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hlx-GV-qDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="889"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hcA-vm-aia">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="onF-a3-gzg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qsZ-Xa-5g1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Fel-IF-mY0"/>
+                        <segue destination="jiK-w8-msT" kind="relationship" relationship="viewControllers" id="Qih-5D-HbI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kHE-dh-TpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat" width="18.75" height="18.75"/>
+        <image name="spaceship" width="18.75" height="18.75"/>
+    </resources>
+</document>
